@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
+    </head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Pointless Survey Form</h1>
+    <p id="description" class="description text-center">
+      This form has no use other than the experience I gained from creating it
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control right"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="right"
+        placeholder="Enter your email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="right"
+        placeholder="Enter your age"
+      />
+    </div>
+    <div class="form-group">
+      <p class="wide">Pick a random option from this dropdown menu</p>
+      <select id="dropdown" name="role" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Option 1">Option 1</option>
+        <option value="Option 2">Option 2</option>
+        <option value="Option 3">Option 3</option>
+        <option value="Option 4">Option 4</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p class="wide">Would you like to select one of these?</p>
+      <label>
+        <input
+          name="user-like"
+          value="yes"
+          type="radio"
+          class="input-radio"                     />Yes</label>
+      <label>
+        <input
+          name="user-like"
+          value="no"
+          type="radio"
+          class="input-radio"
+          checked
+        />No</label>
+    </div>
+    <div class="form-group">
+      <p class="wide">How do you feel about               checkboxes?
+      <span class="clue">(Check all           that apply)</span>
+      </p>
+      <label>
+        <input
+          name="prefer"
+          value="want-to-select"
+          type="checkbox"
+          class="input-checkbox"
+          />I want to select this                 one</label>
+      <label>
+        <input
+          name="prefer"
+          value="like-them"
+          type="checkbox"
+          class="input-checkbox"
+          />I like them</label>
+      <label>
+        <input
+          name="prefer"
+          value="want-THIS-one"
+          type="checkbox"
+          class="input-checkbox"
+               />I want to select                 <i>this</i> one</label>
+    </div>
+    <div class="form-group">
+      <p class="wide">Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea wide"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit" id="submit"       class="submit-button wide">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+<footer>
+</footer>
+</body>
+</html>

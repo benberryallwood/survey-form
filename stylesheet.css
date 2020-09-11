@@ -1,0 +1,68 @@
+body {
+  background-color: hsl(200, 60%, 20%);
+}
+
+.container {
+  width: 70vw;
+  margin-top: -32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background-color: hsl(190, 80%, 95%);
+}
+
+.form-group {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+body {
+  font-family: calibri;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.description {
+  margin-top: -1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#description {
+  font-size: 1.1rem;
+}
+
+.wide {
+  grid-column: 1 / 4;
+}
+
+#submit {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-self: center;
+}
+
+.right {
+  grid-column: 2 / 4;
+}
+
+#comments {
+  height: 5em;
+}
+
+/*footer {
+  background-color: #555;
+  width: 100vw;
+  height: 100px;
+  margin-left: -8px;
+  margin-bottom: -50px;
+  position: fixed;
+}*/
