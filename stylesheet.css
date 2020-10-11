@@ -1,5 +1,5 @@
 body {
-    background-color: hsl(200, 60%, 20%);
+    /*background-color: hsl(200, 60%, 20%);*/
     font-family: arial;
 }
 
@@ -10,7 +10,7 @@ body {
     margin-right: auto;
     padding-top: 10px;
     padding-bottom: 50px;
-    background-color: hsl(190, 80%, 95%);
+    /*background-color: hsl(190, 80%, 95%);*/
 }
 
 .form-group {
