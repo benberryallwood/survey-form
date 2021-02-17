@@ -1,22 +1,27 @@
 body {
-    /*background-color: hsl(200, 60%, 20%);*/
     font-family: arial;
+    color: #333;
 }
 
 .container {
     width: 70vw;
-    margin-top: -32px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: -32px auto auto;
     padding-top: 10px;
     padding-bottom: 50px;
-    /*background-color: hsl(190, 80%, 95%);*/
+}
+
+form {
+    padding: 0;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    border: 1px solid #ddd;
 }
 
 .form-group {
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-top: 0.5em;
+    width: 80%;
+    max-width: 40rem;
+    margin: 0.5rem auto auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -27,23 +32,28 @@ body {
 
 .description {
     margin-top: -1rem;
+    font-size: 1.1rem;
 }
 
 h1 {
     font-size: 3rem;
 }
 
-#description {
-    font-size: 1.1rem;
+.clue {
+    color: #666;
 }
 
 .wide {
     grid-column: 1 / 4;
 }
 
-#submit {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.dropdown {
+    max-width: 20rem;
+}
+
+.submit-button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     justify-self: center;
 }
 
@@ -51,15 +61,7 @@ h1 {
     grid-column: 2 / 4;
 }
 
-#comments {
+.input-text-area {
     height: 5em;
 }
 
-/*footer {
-    background-color: #555;
-    width: 100vw;
-    height: 100px;
-    margin-left: -8px;
-    margin-bottom: -50px;
-    position: fixed;
-}*/
