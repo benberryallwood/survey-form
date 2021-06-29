@@ -1,0 +1,77 @@
+/* Using values from
+   https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/
+   */
+.container {
+  width: 70vw;
+  margin: -32px auto auto;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  font-family: arial;
+  color: #333;
+}
+@media (max-width: 599px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+form {
+  padding: 0;
+  margin: 0;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+@media (min-width: 600px) {
+  form {
+    border: 1px solid #ddd;
+  }
+}
+
+.form-group {
+  width: 80%;
+  max-width: 40rem;
+  margin: 0.5rem auto auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 599px) {
+  .form-group {
+    width: 90%;
+  }
+}
+.form-group .clue {
+  color: #666;
+}
+.form-group .right {
+  grid-column: 2/4;
+}
+.form-group .wide {
+  grid-column: 1/4;
+}
+.form-group .dropdown {
+  max-width: 20rem;
+}
+.form-group .input-text-area {
+  height: 5em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.description {
+  margin-top: -1rem;
+  font-size: 1.1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.submit-button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  justify-self: center;
+}
+
+/*# sourceMappingURL=main.css.map */

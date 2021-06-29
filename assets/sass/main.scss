@@ -1,13 +1,15 @@
-body {
-    font-family: arial;
-    color: #333;
-}
+@use 'breakpoints';
 
 .container {
     width: 70vw;
     margin: -32px auto auto;
     padding-top: 10px;
     padding-bottom: 50px;
+    font-family: arial;
+    color: #333;
+    @include breakpoints.extra-small-only {
+        width: 90vw;
+    }
 }
 
 form {
@@ -15,15 +17,36 @@ form {
     margin: 0;
     padding-top: 3rem;
     padding-bottom: 1.5rem;
-    border: 1px solid #ddd;
+    @include breakpoints.small-up {
+        border: 1px solid #ddd;
+    }
 }
 
 .form-group {
     width: 80%;
+    @include breakpoints.extra-small-only {
+        width: 90%;
+    }
     max-width: 40rem;
     margin: 0.5rem auto auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+
+    .clue {
+        color: #666;
+    }
+    .right {
+        grid-column: 2 / 4;
+    }
+    .wide {
+        grid-column: 1 / 4;
+    }
+    .dropdown {
+        max-width: 20rem;
+    }
+    .input-text-area {
+        height: 5em;
+    }
 }
 
 .text-center {
@@ -39,29 +62,8 @@ h1 {
     font-size: 3rem;
 }
 
-.clue {
-    color: #666;
-}
-
-.wide {
-    grid-column: 1 / 4;
-}
-
-.dropdown {
-    max-width: 20rem;
-}
-
 .submit-button {
     margin-top: 1rem;
     margin-bottom: 1rem;
     justify-self: center;
 }
-
-.right {
-    grid-column: 2 / 4;
-}
-
-.input-text-area {
-    height: 5em;
-}
-
