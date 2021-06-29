@@ -1,0 +1,19 @@
+/* Using values from
+   https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/
+   */
+
+@mixin extra-small-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin small-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin medium-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin large-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin extra-large-up {
+  @media (min-width: 1800px) { @content; }
+}
